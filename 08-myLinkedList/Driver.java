@@ -22,5 +22,7 @@ public class Driver{
 	a.addToEnd("!");
 	System.out.println(a);
 	System.out.println(a.find("B"));
+	System.out.println(a);
+
     }
 }

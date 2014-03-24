@@ -62,6 +62,11 @@ public class myLinkedList{
 	return ans;
     }
     public String remove(int pos){
+	if(pos == 0){
+	    String ans = head.getData();
+	    head = head.getNext();
+	    return ans;
+	}
 	Node prev = head;
 	for(int i=0;i<pos-1;i++){
 	    prev = prev.getNext();
