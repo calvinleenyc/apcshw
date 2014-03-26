@@ -7,15 +7,24 @@ I also cannot recall my partner's name.  Hopefully he knows mine.
 Here's the basic gist of my changes to the original:
 
 public void insert(E d){
+
 Node<E> n = new Node<E>(d);
+
 if(current == null)current = n;
+
 else{
 n.next = current;
+
 n.prev = current.prev;
+
 if(current.prev!=null)current.prev.next = n;
+
 current.prev = n;
+
 current = n;
+
 }
+
 }
 
 AND
